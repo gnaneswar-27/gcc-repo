@@ -6,24 +6,21 @@ interface PageHeroProps {
 
 const PageHero = ({ image, title, subtitle }: PageHeroProps) => {
   return (
-    <section className="relative h-[50vh] md:h-[60vh] min-h-[300px] w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/30" />
+        <img src={image} alt={title} className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 text-center px-6">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
         {subtitle && (
-          <p className="text-xs tracking-[0.25em] uppercase text-white/80 mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-white/70 mb-6 animate-fade-in">
             {subtitle}
           </p>
         )}
-        <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light tracking-wide text-white">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-light tracking-wide text-white mb-6 animate-fade-up">
           {title}
         </h1>
+        <div className="w-16 h-px bg-white/40" />
       </div>
     </section>
   );

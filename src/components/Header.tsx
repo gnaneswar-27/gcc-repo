@@ -36,7 +36,6 @@ const Header = ({ isTransparent = true }: HeaderProps) => {
     { label: "Special Offers", href: "/special-offers" },
     { label: "Gift Vouchers", href: "/gift-vouchers" },
     { label: "About Us", href: "/about-us" },
-    { label: "Contact Us", href: "/contact-us" },
   ];
 
   return (
