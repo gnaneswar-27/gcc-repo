@@ -7,31 +7,38 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero-section">
+    <section className="hero-section relative overflow-hidden h-screen w-full">
       {/* Background Video */}
-      <div className="absolute inset-0">
-        <iframe
-          src="https://www.youtube.com/embed/Vd3JxN14NwA?autoplay=1&mute=1&loop=1&playlist=Vd3JxN14NwA&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-          title="Our GCC Hero Video"
-          className="w-full h-full object-cover pointer-events-none"
-          style={{ position: 'absolute', top: '50%', left: '50%', width: '177.78vh', height: '100vh', minWidth: '100%', minHeight: '100%', transform: 'translate(-50%, -50%)' }}
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          frameBorder="0"
-        />
-        <div className="hero-overlay" />
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/golf-hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Hero Overlay - Ensure this has a background color like bg-black/40 in your CSS */}
+        <div className="hero-overlay absolute inset-0 bg-black/30" />
+      </div>
+
+      {/* Content Container (Optional: if you have text to add later) */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+          {/* Add hero text here if needed */}
       </div>
 
       {/* Scroll Indicator */}
       <button
         onClick={scrollToContent}
-        className="scroll-indicator group cursor-pointer"
+        className="scroll-indicator group cursor-pointer absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
         aria-label="Scroll down"
       >
-        <span className="text-xs tracking-[0.2em] uppercase opacity-80 group-hover:opacity-100 transition-opacity">
+        <span className="text-xs tracking-[0.2em] uppercase opacity-80 group-hover:opacity-100 transition-opacity text-white">
           Scroll Down
         </span>
-        <ChevronDown className="scroll-arrow" />
+        <ChevronDown className="scroll-arrow text-white animate-bounce" />
       </button>
     </section>
   );
