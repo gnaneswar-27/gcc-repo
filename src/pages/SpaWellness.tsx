@@ -7,7 +7,7 @@ const SpaWellness = () => {
   return (
     <main className="min-h-screen">
       <Header isTransparent />
-      <PageHero image={spaImage} title="Our GCC Spa" subtitle="Wellness" />
+      <PageHero image={spaImage} title="GCC Spa" subtitle="Wellness" />
 
       <section className="py-16 lg:py-32 bg-background">
         <div className="container mx-auto px-6 lg:px-12">

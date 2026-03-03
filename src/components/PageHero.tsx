@@ -17,7 +17,7 @@ const PageHero = ({ image, title, subtitle }: PageHeroProps) => {
             {subtitle}
           </p>
         )}
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-light tracking-wide text-white mb-6 animate-fade-up">
+        <h1 className="font-serif text-6xl md:text-8xl lg:text-[10rem] font-light tracking-tighter leading-none mb-12 text-white">
           {title}
         </h1>
         <div className="w-16 h-px bg-white/40" />

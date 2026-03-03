@@ -87,14 +87,6 @@ const Header = ({ isTransparent = true }: HeaderProps) => {
                 : "text-primary-foreground",
             )}
           >
-            <div
-              className={cn(
-                "text-[10px] uppercase mb-2 opacity-80 transition-all duration-1000 ease-in-out",
-                isExpanded ? "tracking-[0.7em]" : "tracking-[0.4em]",
-              )}
-            >
-              ✦
-            </div>
 
             <h1 className="font-serif text-2xl md:text-4xl flex items-center justify-center tracking-tight">
               {/* Word: Garstang */}

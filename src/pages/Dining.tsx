@@ -7,14 +7,14 @@ import diningImage from "@/assets/fine-dining.jpg";
 const restaurants = [
   {
     id: 1,
-    name: "The Mayfair Grill",
+    name: "Bradbeer",
     description: "Our flagship restaurant where culinary artistry meets British tradition. Led by acclaimed chef Marcus Belmont, experience seasonal menus that celebrate the finest local ingredients.",
     cuisine: "Contemporary British",
     image: diningImage,
   },
   {
     id: 2,
-    name: "The Coburg Bar",
+    name: "Kingfisher Lounge",
     description: "An intimate sanctuary for cocktail connoisseurs. Our award-winning mixologists craft bespoke libations in an atmosphere of refined elegance.",
     cuisine: "Cocktail Bar",
     image: barImage,
@@ -25,7 +25,7 @@ const Dining = () => {
   return (
     <main className="min-h-screen">
       <Header isTransparent />
-      <PageHero image={diningImage} title="Culinary Excellence" subtitle="Gastronomy" />
+      <PageHero image={diningImage} title="Restaurant & Bar" subtitle="Gastronomy" />
 
       <section className="py-16 lg:py-32 bg-background">
         <div className="container mx-auto px-6 lg:px-12">

@@ -209,7 +209,7 @@ const GolfCourse = () => {
       {/* 5. FULL WIDTH IMMERSIVE CTA */}
       <section className="relative h-[90vh] flex items-center justify-center text-center">
         <img
-          src={golfImage}
+          src={'/golf-3.jpg'}
           className="absolute inset-0 w-full h-full object-cover"
           alt="CTA BG"
         />

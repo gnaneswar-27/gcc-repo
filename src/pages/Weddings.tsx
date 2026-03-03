@@ -51,7 +51,7 @@ const Weddings = () => {
           <p className="text-xs tracking-[0.3em] uppercase text-white/70 mb-6 animate-fade-in">
             Celebrations at GCC
           </p>
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-light tracking-wide text-white mb-6 animate-fade-up">
+          <h1 className="font-serif text-white text-6xl md:text-8xl lg:text-[10rem] font-light tracking-tighter leading-none mb-12">
             Weddings
           </h1>
           <div className="w-16 h-px bg-white/40 mb-8" />
