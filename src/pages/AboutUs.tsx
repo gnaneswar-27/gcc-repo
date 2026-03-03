@@ -9,7 +9,7 @@ const AboutUs = () => {
       <Header isTransparent />
 
       {/* 1. CLEAN LEGACY HERO */}
-      <section className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center">
+      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
             src="/about-1.jpg" 
@@ -59,7 +59,7 @@ const AboutUs = () => {
         <div className="grid lg:grid-cols-2 gap-24 items-center mb-48">
           <div className="relative group">
              <div className="aspect-[4/5] overflow-hidden shadow-2xl">
-                <img src="/golf-3.jpg" alt="Vintage Club" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                <img src="/golf-fairway.jpg" alt="Vintage Club" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
              </div>
              <div className="absolute -top-12 -left-12 w-64 h-64 border border-primary/10 -z-10 hidden lg:block" />
           </div>

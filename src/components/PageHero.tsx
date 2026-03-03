@@ -13,7 +13,7 @@ const PageHero = ({ image, title, subtitle }: PageHeroProps) => {
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
         {subtitle && (
-          <p className="text-xs tracking-[0.3em] uppercase text-white/70 mb-6 animate-fade-in">
+          <p className="text-xs tracking-[0.3em] uppercase text-white/70 mb-6 animate-fade-in font-medium">
             {subtitle}
           </p>
         )}

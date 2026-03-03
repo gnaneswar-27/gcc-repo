@@ -27,7 +27,7 @@ const SpecialOffers = () => {
   return (
     <main className="min-h-screen">
       <Header isTransparent />
-      <PageHero image={suiteImage} title="Special Offers" subtitle="Exclusive" />
+      <PageHero image={'/offers-1.jpg'} title="Special Offers" subtitle="Exclusive" />
 
       <section className="py-16 lg:py-32 bg-background">
         <div className="container mx-auto px-6 lg:px-12">
